@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 class GoogleMap extends Component {
   componentDidMount() {
+    console.log(this.props.lat);
+    console.log(this.props.lon);
+    console.log(this.refs.map);
     new google.maps.Map(this.refs.map, {
       zoom: 12,
       center: {
